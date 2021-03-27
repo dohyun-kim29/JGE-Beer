@@ -35,6 +35,7 @@ class ListViewModel: ViewModelType {
         
         input.refreshTrigger
             .asObservable()
+            .map { self.pageSize = 1 }
             .flatMapLatest {
                 input.provider.rx.request(.getBeerList(pageSize: self.pageSize))
                     .filterSuccessfulStatusCodes()

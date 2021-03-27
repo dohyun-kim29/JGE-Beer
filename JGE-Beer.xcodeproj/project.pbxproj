@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1913ACEFD30DF80C7EAF3C98 /* Pods_JGE_Beer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3236EC717D2F59FEB9924E76 /* Pods_JGE_Beer.framework */; };
+		D96014A1260F478000C5B72B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014A0260F478000C5B72B /* TabBarController.swift */; };
+		D96014A4260F478900C5B72B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014A3260F478900C5B72B /* SearchViewController.swift */; };
+		D96014A7260F479400C5B72B /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014A6260F479400C5B72B /* RandomViewController.swift */; };
+		D96014AB260F4B9E00C5B72B /* NavigationVC+Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014AA260F4B9E00C5B72B /* NavigationVC+Title.swift */; };
 		D9953355260DFFD70016AD24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9953354260DFFD70016AD24 /* AppDelegate.swift */; };
 		D9953359260DFFD70016AD24 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9953358260DFFD70016AD24 /* ListViewController.swift */; };
 		D995335C260DFFD70016AD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D995335A260DFFD70016AD24 /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 /* Begin PBXFileReference section */
 		3236EC717D2F59FEB9924E76 /* Pods_JGE_Beer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JGE_Beer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5954A286AE9BEC15CBC88033 /* Pods-JGE-Beer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.release.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.release.xcconfig"; sourceTree = "<group>"; };
+		D96014A0260F478000C5B72B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D96014A3260F478900C5B72B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D96014A6260F479400C5B72B /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		D96014AA260F4B9E00C5B72B /* NavigationVC+Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationVC+Title.swift"; sourceTree = "<group>"; };
 		D9953351260DFFD70016AD24 /* JGE-Beer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JGE-Beer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9953354260DFFD70016AD24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9953358260DFFD70016AD24 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -162,7 +170,10 @@
 		D99533CF260E0E3D0016AD24 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D96014A0260F478000C5B72B /* TabBarController.swift */,
 				D9953358260DFFD70016AD24 /* ListViewController.swift */,
+				D96014A3260F478900C5B72B /* SearchViewController.swift */,
+				D96014A6260F479400C5B72B /* RandomViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 				D99533F2260E167C0016AD24 /* RxReachBottom.swift */,
 				D99533F6260E170D0016AD24 /* UIKit+Alert.swift */,
 				D99533F9260EB6DB0016AD24 /* CheckInternet.swift */,
+				D96014AA260F4B9E00C5B72B /* NavigationVC+Title.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -189,6 +201,7 @@
 				D995334E260DFFD70016AD24 /* Frameworks */,
 				D995334F260DFFD70016AD24 /* Resources */,
 				4A0E82F9ECCD5F2813D7AFFA /* [CP] Embed Pods Frameworks */,
+				D9953417260F3F020016AD24 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -285,6 +298,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D9953417260F3F020016AD24 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,13 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96014A7260F479400C5B72B /* RandomViewController.swift in Sources */,
 				D99533AD260E05AA0016AD24 /* ViewModelType.swift in Sources */,
+				D96014A1260F478000C5B72B /* TabBarController.swift in Sources */,
 				D99533FA260EB6DB0016AD24 /* CheckInternet.swift in Sources */,
 				D99533C5260E06F80016AD24 /* Beer.swift in Sources */,
 				D99533F3260E167C0016AD24 /* RxReachBottom.swift in Sources */,
 				D9953359260DFFD70016AD24 /* ListViewController.swift in Sources */,
 				D99533F7260E170D0016AD24 /* UIKit+Alert.swift in Sources */,
 				D9953355260DFFD70016AD24 /* AppDelegate.swift in Sources */,
+				D96014AB260F4B9E00C5B72B /* NavigationVC+Title.swift in Sources */,
+				D96014A4260F478900C5B72B /* SearchViewController.swift in Sources */,
 				D995339C260E02560016AD24 /* BeerAPI.swift in Sources */,
 				D99533DD260E0F150016AD24 /* ListSection.swift in Sources */,
 				D99533E0260E0F580016AD24 /* ListViewModel.swift in Sources */,

@@ -27,7 +27,7 @@ class ListViewController: UIViewController {
         return refreshControl
     }()
     
-    private let dataSource = RxTableViewSectionedReloadDataSource<ListSection>(configureCell: {  (dataSource, tableView, indexPath, user) -> UITableViewCell in
+    private let dataSource = RxTableViewSectionedReloadDataSource<ListSection>(configureCell: {  (_, tableView, _, user) -> UITableViewCell in
         let cell = tableView.dequeueReusableCell(withIdentifier: "BeerCell") as? BeerTableViewCell ?? BeerTableViewCell(style: .default, reuseIdentifier: "BeerCell")
         cell.configure(with: user)
         return cell
@@ -37,12 +37,18 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "List"
+        setupNavigationTitle()
         setupSubview()
         bindViewModel()
     }
     
     // MARK: - Private Methods
+    
+    private func setupNavigationTitle() {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.title = "맥주리스트"
+        self.navigationItem.accessibilityLabel = "맥주리스트"
+    }
     
     private func setupSubview() {
         view.addSubview(tableView)
@@ -87,8 +93,7 @@ class ListViewController: UIViewController {
         //    }).disposed(by: disposeBag)
         
         tableView.rx.itemSelected
-            .subscribe(onNext: { self.tableView.deselectRow(at: $0, animated: true)} )
+            .subscribe(onNext: { self.tableView.deselectRow(at: $0, animated: true)})
             .disposed(by: disposeBag)
     }
 }
-

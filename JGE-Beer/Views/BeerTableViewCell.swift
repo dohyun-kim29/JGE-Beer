@@ -85,21 +85,21 @@ class BeerTableViewCell: UITableViewCell {
         
         if #available(iOS 12.0, *) {
             if CheckInternet.shared.isInternet() == true {
-                self.beerImageView.kf.setImage(with: URL(string:beer.imageURL))
+                self.beerImageView.kf.setImage(with: URL(string: beer.imageURL))
             } else {
-                self.beerImageView.kf.setImage(with: URL(string:beer.imageURL), options: [.cacheMemoryOnly])
+                self.beerImageView.kf.setImage(with: URL(string: beer.imageURL), options: [.cacheMemoryOnly])
             }
         } else {
-            let reachability = try! Reachability()
+            let reachability = try? Reachability()
             
-            reachability.whenReachable = { _ in
-                self.beerImageView.kf.setImage(with: URL(string:beer.imageURL))
+            reachability?.whenReachable = { _ in
+                self.beerImageView.kf.setImage(with: URL(string: beer.imageURL))
             }
             
-            reachability.whenUnreachable = { _ in
-                self.beerImageView.kf.setImage(with: URL(string:beer.imageURL), options: [.cacheMemoryOnly])
+            reachability?.whenUnreachable = { _ in
+                self.beerImageView.kf.setImage(with: URL(string: beer.imageURL), options: [.cacheMemoryOnly])
             }
-       }
+        }
         idLabel.text = String(beer.id)
         nameLabel.text = beer.name
         descLabel.text = beer.description

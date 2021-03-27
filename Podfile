@@ -7,7 +7,6 @@ target 'JGE-Beer' do
   # Reactive
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
-  pod 'RxSwiftExt', '~> 5'
   pod 'RxDataSources', '~> 4.0'
 
   # Network
@@ -19,6 +18,9 @@ target 'JGE-Beer' do
 
   # Layout
   pod 'SnapKit', '~> 5.0.0'
+
+  # Code Style
+  pod 'SwiftLint'
 
   # Pods for JGE-Beer
 
