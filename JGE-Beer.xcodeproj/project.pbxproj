@@ -12,6 +12,8 @@
 		D96014A4260F478900C5B72B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014A3260F478900C5B72B /* SearchViewController.swift */; };
 		D96014A7260F479400C5B72B /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014A6260F479400C5B72B /* RandomViewController.swift */; };
 		D96014AB260F4B9E00C5B72B /* NavigationVC+Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014AA260F4B9E00C5B72B /* NavigationVC+Title.swift */; };
+		D96014B1260F5A3400C5B72B /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014B0260F5A3400C5B72B /* BeerView.swift */; };
+		D96014B6260F5C8C00C5B72B /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014B5260F5C8C00C5B72B /* RandomViewModel.swift */; };
 		D9953355260DFFD70016AD24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9953354260DFFD70016AD24 /* AppDelegate.swift */; };
 		D9953359260DFFD70016AD24 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9953358260DFFD70016AD24 /* ListViewController.swift */; };
 		D995335C260DFFD70016AD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D995335A260DFFD70016AD24 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		D96014A3260F478900C5B72B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D96014A6260F479400C5B72B /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		D96014AA260F4B9E00C5B72B /* NavigationVC+Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationVC+Title.swift"; sourceTree = "<group>"; };
+		D96014B0260F5A3400C5B72B /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
+		D96014B5260F5C8C00C5B72B /* RandomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewModel.swift; sourceTree = "<group>"; };
 		D9953351260DFFD70016AD24 /* JGE-Beer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JGE-Beer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9953354260DFFD70016AD24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9953358260DFFD70016AD24 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				D99533B9260E062C0016AD24 /* BeerTableViewCell.swift */,
+				D96014B0260F5A3400C5B72B /* BeerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				D99533DF260E0F580016AD24 /* ListViewModel.swift */,
+				D96014B5260F5C8C00C5B72B /* RandomViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96014A7260F479400C5B72B /* RandomViewController.swift in Sources */,
+				D96014B1260F5A3400C5B72B /* BeerView.swift in Sources */,
 				D99533AD260E05AA0016AD24 /* ViewModelType.swift in Sources */,
 				D96014A1260F478000C5B72B /* TabBarController.swift in Sources */,
 				D99533FA260EB6DB0016AD24 /* CheckInternet.swift in Sources */,
@@ -334,6 +341,7 @@
 				D96014AB260F4B9E00C5B72B /* NavigationVC+Title.swift in Sources */,
 				D96014A4260F478900C5B72B /* SearchViewController.swift in Sources */,
 				D995339C260E02560016AD24 /* BeerAPI.swift in Sources */,
+				D96014B6260F5C8C00C5B72B /* RandomViewModel.swift in Sources */,
 				D99533DD260E0F150016AD24 /* ListSection.swift in Sources */,
 				D99533E0260E0F580016AD24 /* ListViewModel.swift in Sources */,
 				D99533E3260E12E40016AD24 /* ActivityIndicator.swift in Sources */,

@@ -11,7 +11,7 @@ struct Beer: Decodable {
     var id: Int
     var name: String
     var description: String
-    var imageURL: String
+    var imageURL: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"

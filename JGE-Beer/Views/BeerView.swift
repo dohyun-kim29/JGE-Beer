@@ -1,8 +1,8 @@
 //
-//  BeerTableViewCell.swift
+//  Beer.swift
 //  JGE-Beer
 //
-//  Created by GoEun Jeong on 2021/03/26.
+//  Created by GoEun Jeong on 2021/03/27.
 //
 
 import UIKit
@@ -11,8 +11,7 @@ import RxSwift
 import Kingfisher
 import Reachability
 
-class BeerTableViewCell: UITableViewCell {
-    
+class BeerView: UIView {
     private let stackSpacing: CGFloat = 10.0
     private let padding: CGFloat = 16.0
     private var disposeBag = DisposeBag()
@@ -21,7 +20,7 @@ class BeerTableViewCell: UITableViewCell {
         let beerImageView = UIImageView()
         beerImageView.contentMode = .scaleAspectFit
         beerImageView.snp.makeConstraints {
-            $0.height.width.equalTo(120)
+            $0.height.width.equalTo(UIScreen.main.bounds.height / 3.5)
         }
         return beerImageView
     }()
@@ -44,39 +43,22 @@ class BeerTableViewCell: UITableViewCell {
         let descLabel = UILabel()
         descLabel.text = "Description"
         descLabel.textColor = UIColor.gray
-        descLabel.numberOfLines = 3
+        descLabel.numberOfLines = 0
         return descLabel
     }()
     
     private lazy var nameStackView: UIStackView = {
-        let nameStackView = UIStackView(arrangedSubviews: [idLabel, nameLabel, descLabel])
+        let nameStackView = UIStackView(arrangedSubviews: [beerImageView, idLabel, nameLabel, descLabel])
         nameStackView.axis = .vertical
-        nameStackView.alignment = .top
+        nameStackView.alignment = .center
+        nameStackView.spacing = stackSpacing
         return nameStackView
-    }()
-    
-    private lazy var mainStackView: UIStackView = {
-        let mainStackView = UIStackView(arrangedSubviews: [beerImageView, nameStackView])
-        mainStackView.axis = .horizontal
-        mainStackView.distribution = .fill
-        mainStackView.spacing = stackSpacing
-        return mainStackView
     }()
     
     // MARK: - Initialization
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override func draw(_ rect: CGRect) {
         setupSubview()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        disposeBag = DisposeBag()
     }
     
     // MARK: - Public Methods
@@ -109,10 +91,10 @@ class BeerTableViewCell: UITableViewCell {
     // MARK: Private Methods
     
     private func setupSubview() {
-        addSubview(mainStackView)
-        mainStackView.snp.makeConstraints {
+        addSubview(nameStackView)
+        nameStackView.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview().inset(padding)
-            $0.bottom.equalToSuperview().inset(padding).priority(.high)
+//            $0.bottom.equalToSuperview().inset(padding).priority(.high)
         }
     }
 }
