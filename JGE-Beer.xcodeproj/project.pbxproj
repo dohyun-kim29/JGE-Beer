@@ -7,207 +7,207 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1913ACEFD30DF80C7EAF3C98 /* Pods_JGE_Beer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3236EC717D2F59FEB9924E76 /* Pods_JGE_Beer.framework */; };
-		D96014A1260F478000C5B72B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014A0260F478000C5B72B /* TabBarController.swift */; };
-		D96014A4260F478900C5B72B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014A3260F478900C5B72B /* SearchViewController.swift */; };
-		D96014A7260F479400C5B72B /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014A6260F479400C5B72B /* RandomViewController.swift */; };
-		D96014AB260F4B9E00C5B72B /* NavigationVC+Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014AA260F4B9E00C5B72B /* NavigationVC+Title.swift */; };
-		D96014B1260F5A3400C5B72B /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014B0260F5A3400C5B72B /* BeerView.swift */; };
-		D96014B6260F5C8C00C5B72B /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96014B5260F5C8C00C5B72B /* RandomViewModel.swift */; };
-		D9953355260DFFD70016AD24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9953354260DFFD70016AD24 /* AppDelegate.swift */; };
-		D9953359260DFFD70016AD24 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9953358260DFFD70016AD24 /* ListViewController.swift */; };
-		D995335C260DFFD70016AD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D995335A260DFFD70016AD24 /* Main.storyboard */; };
-		D995335E260DFFD90016AD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D995335D260DFFD90016AD24 /* Assets.xcassets */; };
-		D9953361260DFFD90016AD24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D995335F260DFFD90016AD24 /* LaunchScreen.storyboard */; };
-		D995339C260E02560016AD24 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995339B260E02560016AD24 /* BeerAPI.swift */; };
-		D99533A9260E050A0016AD24 /* Stub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D99533A8260E050A0016AD24 /* Stub.bundle */; };
-		D99533AD260E05AA0016AD24 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533AC260E05AA0016AD24 /* ViewModelType.swift */; };
-		D99533BA260E062C0016AD24 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533B9260E062C0016AD24 /* BeerTableViewCell.swift */; };
-		D99533C5260E06F80016AD24 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533C4260E06F80016AD24 /* Beer.swift */; };
-		D99533DD260E0F150016AD24 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533DC260E0F150016AD24 /* ListSection.swift */; };
-		D99533E0260E0F580016AD24 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533DF260E0F580016AD24 /* ListViewModel.swift */; };
-		D99533E3260E12E40016AD24 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533E2260E12E40016AD24 /* ActivityIndicator.swift */; };
-		D99533F3260E167C0016AD24 /* RxReachBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533F2260E167C0016AD24 /* RxReachBottom.swift */; };
-		D99533F7260E170D0016AD24 /* UIKit+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533F6260E170D0016AD24 /* UIKit+Alert.swift */; };
-		D99533FA260EB6DB0016AD24 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99533F9260EB6DB0016AD24 /* CheckInternet.swift */; };
+		03B53FD707D0ED3AAF84B065 /* NavigationVC+Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37EC3DB637762959591F04 /* NavigationVC+Title.swift */; };
+		0BBBE150923F11F2B23D95E3 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E82ABA7E7E8C4EBB977F0B /* RandomViewController.swift */; };
+		15918ECD3AB21E93FC4FDF4A /* RxReachBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE25674F48CAB1155B3A407 /* RxReachBottom.swift */; };
+		1E5AFBC72285E665D1ADF793 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B29DF12C5015C3E36AB373 /* ListSection.swift */; };
+		1F43E41DC5C0B226BFC65ACE /* Stub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A98C706BC39A66C4B6520D7A /* Stub.bundle */; };
+		2387897E938F97B41798D19D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243F3027D111D40FBFF28CF /* ActivityIndicator.swift */; };
+		291A97C995D34C2FA8A7F482 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E680F1B645CD05E9796 /* TabBarController.swift */; };
+		42B4A89416C5FF571A6C1EF3 /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725497E2961E76AC596438DB /* BeerView.swift */; };
+		4AB8A36E725931D713182E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253AF0622240D8CAB6629486 /* Assets.xcassets */; };
+		624FB0422804F4781B3E002E /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33547C214929D0E663FCF7 /* BeerTableViewCell.swift */; };
+		7376E8AAAAAE90EA130455FB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF6E143BC43BE719049D03 /* SearchViewModel.swift */; };
+		73F0D617DC14EE8345B69EF6 /* Pods_JGE_Beer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A83F6849EE4B96944E096F /* Pods_JGE_Beer.framework */; };
+		829AEE790BC301BC62AD6734 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5DCC2A3A1BFFFAFF08D547 /* CheckInternet.swift */; };
+		8958333F1B25C1D59BF56E9D /* UIKit+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299783C4DEB22AFB54C0F0F /* UIKit+Alert.swift */; };
+		8F07BC229F989E35A976A90A /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF016F13986081895556FE2 /* Beer.swift */; };
+		93206A89DE00C35999821192 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A2C7C6AF76683E8C955DFF /* SearchViewController.swift */; };
+		9691BF170BC6A3335A94F6D6 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6EDBA05765CBAE027BB20 /* BeerAPI.swift */; };
+		C32B101D2577EB2083A31162 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5697D851A010935F62D7D99 /* ListViewController.swift */; };
+		C5A20656465B265ABC684788 /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E6C6C4F873AFFD7B01F7D /* RandomViewModel.swift */; };
+		D32EE9BB84EEC6BC156D7CBF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8C3337A4EC42A00552E739 /* ListViewModel.swift */; };
+		D95DBE7C886B1DE615DEEE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBF280451AA53191D268655 /* AppDelegate.swift */; };
+		F436830CED5872375A577E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F85DCE8AC870E086E2D0773 /* LaunchScreen.storyboard */; };
+		F8B2CBFAF87D8B16CEB1DBA8 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B14C0BAF3DD0DFEFE9081 /* ViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3236EC717D2F59FEB9924E76 /* Pods_JGE_Beer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JGE_Beer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5954A286AE9BEC15CBC88033 /* Pods-JGE-Beer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.release.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.release.xcconfig"; sourceTree = "<group>"; };
-		D96014A0260F478000C5B72B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		D96014A3260F478900C5B72B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		D96014A6260F479400C5B72B /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
-		D96014AA260F4B9E00C5B72B /* NavigationVC+Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationVC+Title.swift"; sourceTree = "<group>"; };
-		D96014B0260F5A3400C5B72B /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
-		D96014B5260F5C8C00C5B72B /* RandomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewModel.swift; sourceTree = "<group>"; };
-		D9953351260DFFD70016AD24 /* JGE-Beer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JGE-Beer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9953354260DFFD70016AD24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9953358260DFFD70016AD24 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		D995335B260DFFD70016AD24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D995335D260DFFD90016AD24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D9953360260DFFD90016AD24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D9953362260DFFD90016AD24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D995339B260E02560016AD24 /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
-		D99533A8260E050A0016AD24 /* Stub.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stub.bundle; sourceTree = "<group>"; };
-		D99533AC260E05AA0016AD24 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
-		D99533B9260E062C0016AD24 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
-		D99533C4260E06F80016AD24 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
-		D99533DC260E0F150016AD24 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
-		D99533DF260E0F580016AD24 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		D99533E2260E12E40016AD24 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		D99533F2260E167C0016AD24 /* RxReachBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxReachBottom.swift; sourceTree = "<group>"; };
-		D99533F6260E170D0016AD24 /* UIKit+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Alert.swift"; sourceTree = "<group>"; };
-		D99533F9260EB6DB0016AD24 /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
-		F0E9FFF5B25DAA0051E67DCF /* Pods-JGE-Beer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.debug.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.debug.xcconfig"; sourceTree = "<group>"; };
+		0243F3027D111D40FBFF28CF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		08A2C7C6AF76683E8C955DFF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0ABF6E143BC43BE719049D03 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		0E2B14C0BAF3DD0DFEFE9081 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		0E5DCC2A3A1BFFFAFF08D547 /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		189E89F66CA5F8A7D3FAEC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		253AF0622240D8CAB6629486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CE25674F48CAB1155B3A407 /* RxReachBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxReachBottom.swift; sourceTree = "<group>"; };
+		52A83F6849EE4B96944E096F /* Pods_JGE_Beer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JGE_Beer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E82ABA7E7E8C4EBB977F0B /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		5C8C3337A4EC42A00552E739 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		5E37EC3DB637762959591F04 /* NavigationVC+Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationVC+Title.swift"; sourceTree = "<group>"; };
+		61440A9A6E1D3E517F49932E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6AF016F13986081895556FE2 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		725497E2961E76AC596438DB /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
+		741DE11E283E4BF7501C1A70 /* Pods-JGE-Beer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.release.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.release.xcconfig"; sourceTree = "<group>"; };
+		A5E6EDBA05765CBAE027BB20 /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
+		A98C706BC39A66C4B6520D7A /* Stub.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stub.bundle; sourceTree = "<group>"; };
+		B1B29DF12C5015C3E36AB373 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
+		BA6E6C6C4F873AFFD7B01F7D /* RandomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewModel.swift; sourceTree = "<group>"; };
+		C299783C4DEB22AFB54C0F0F /* UIKit+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Alert.swift"; sourceTree = "<group>"; };
+		C8F53E680F1B645CD05E9796 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CD33547C214929D0E663FCF7 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		D5697D851A010935F62D7D99 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E14541081A74B55D2E97F78C /* JGE-Beer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "JGE-Beer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBF280451AA53191D268655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE02BA169918FD7E76BC18F2 /* Pods-JGE-Beer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.debug.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D995334E260DFFD70016AD24 /* Frameworks */ = {
+		77AD3691B562572F36BF206E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1913ACEFD30DF80C7EAF3C98 /* Pods_JGE_Beer.framework in Frameworks */,
+				73F0D617DC14EE8345B69EF6 /* Pods_JGE_Beer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5DF984CD63FC2D98605E54E7 /* Frameworks */ = {
+		1AB015FDD07ED3923784453E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3236EC717D2F59FEB9924E76 /* Pods_JGE_Beer.framework */,
+				FE02BA169918FD7E76BC18F2 /* Pods-JGE-Beer.debug.xcconfig */,
+				741DE11E283E4BF7501C1A70 /* Pods-JGE-Beer.release.xcconfig */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C276F8C103E56FD46A2B3B5B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F0E9FFF5B25DAA0051E67DCF /* Pods-JGE-Beer.debug.xcconfig */,
-				5954A286AE9BEC15CBC88033 /* Pods-JGE-Beer.release.xcconfig */,
-			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D9953348260DFFD70016AD24 = {
+		253F3D5D9F038D20055F1E84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9953353260DFFD70016AD24 /* JGE-Beer */,
-				D9953352260DFFD70016AD24 /* Products */,
-				C276F8C103E56FD46A2B3B5B /* Pods */,
-				5DF984CD63FC2D98605E54E7 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		D9953352260DFFD70016AD24 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D9953351260DFFD70016AD24 /* JGE-Beer.app */,
+				E14541081A74B55D2E97F78C /* JGE-Beer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D9953353260DFFD70016AD24 /* JGE-Beer */ = {
+		2BD2113357CBE8E0433C5106 /* JGE-Beer */ = {
 			isa = PBXGroup;
 			children = (
-				D99533F1260E16720016AD24 /* Extension */,
-				D99533B8260E06190016AD24 /* Model */,
-				D99533B6260E060C0016AD24 /* Views */,
-				D99533CF260E0E3D0016AD24 /* ViewControllers */,
-				D99533B7260E060F0016AD24 /* ViewModels */,
-				D99533AB260E05A00016AD24 /* Protocol */,
-				D995339A260E02490016AD24 /* Network */,
-				D9953354260DFFD70016AD24 /* AppDelegate.swift */,
-				D995335A260DFFD70016AD24 /* Main.storyboard */,
-				D995335D260DFFD90016AD24 /* Assets.xcassets */,
-				D995335F260DFFD90016AD24 /* LaunchScreen.storyboard */,
-				D9953362260DFFD90016AD24 /* Info.plist */,
-				D99533A8260E050A0016AD24 /* Stub.bundle */,
+				FBBF280451AA53191D268655 /* AppDelegate.swift */,
+				253AF0622240D8CAB6629486 /* Assets.xcassets */,
+				61440A9A6E1D3E517F49932E /* Info.plist */,
+				1F85DCE8AC870E086E2D0773 /* LaunchScreen.storyboard */,
+				A98C706BC39A66C4B6520D7A /* Stub.bundle */,
+				CD23482D7D5F4E92C10331D9 /* Extension */,
+				FCEC19BE24FAE1615FF697FD /* Model */,
+				4C43ED0A2B3D822C86462F5A /* Network */,
+				8B041B41BCE9B5510F059DC4 /* Protocol */,
+				5DDCD228EA1C47FD4CCD8902 /* ViewControllers */,
+				FE9FC6AE7BB194928EBB788D /* ViewModels */,
+				E9C4E1C8A4D1B1DF7D681E48 /* Views */,
 			);
 			path = "JGE-Beer";
 			sourceTree = "<group>";
 		};
-		D995339A260E02490016AD24 /* Network */ = {
+		4C43ED0A2B3D822C86462F5A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D995339B260E02560016AD24 /* BeerAPI.swift */,
+				A5E6EDBA05765CBAE027BB20 /* BeerAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		D99533AB260E05A00016AD24 /* Protocol */ = {
+		5DDCD228EA1C47FD4CCD8902 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D99533AC260E05AA0016AD24 /* ViewModelType.swift */,
-				D99533E2260E12E40016AD24 /* ActivityIndicator.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		D99533B6260E060C0016AD24 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D99533B9260E062C0016AD24 /* BeerTableViewCell.swift */,
-				D96014B0260F5A3400C5B72B /* BeerView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D99533B7260E060F0016AD24 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				D99533DF260E0F580016AD24 /* ListViewModel.swift */,
-				D96014B5260F5C8C00C5B72B /* RandomViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		D99533B8260E06190016AD24 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D99533C4260E06F80016AD24 /* Beer.swift */,
-				D99533DC260E0F150016AD24 /* ListSection.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D99533CF260E0E3D0016AD24 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				D96014A0260F478000C5B72B /* TabBarController.swift */,
-				D9953358260DFFD70016AD24 /* ListViewController.swift */,
-				D96014A3260F478900C5B72B /* SearchViewController.swift */,
-				D96014A6260F479400C5B72B /* RandomViewController.swift */,
+				D5697D851A010935F62D7D99 /* ListViewController.swift */,
+				55E82ABA7E7E8C4EBB977F0B /* RandomViewController.swift */,
+				08A2C7C6AF76683E8C955DFF /* SearchViewController.swift */,
+				C8F53E680F1B645CD05E9796 /* TabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		D99533F1260E16720016AD24 /* Extension */ = {
+		8836EE58A85FD8B0BB44E793 = {
 			isa = PBXGroup;
 			children = (
-				D99533F2260E167C0016AD24 /* RxReachBottom.swift */,
-				D99533F6260E170D0016AD24 /* UIKit+Alert.swift */,
-				D99533F9260EB6DB0016AD24 /* CheckInternet.swift */,
-				D96014AA260F4B9E00C5B72B /* NavigationVC+Title.swift */,
+				2BD2113357CBE8E0433C5106 /* JGE-Beer */,
+				253F3D5D9F038D20055F1E84 /* Products */,
+				1AB015FDD07ED3923784453E /* Pods */,
+				A9E495A079E97E815F716E41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B041B41BCE9B5510F059DC4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0243F3027D111D40FBFF28CF /* ActivityIndicator.swift */,
+				0E2B14C0BAF3DD0DFEFE9081 /* ViewModelType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A9E495A079E97E815F716E41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52A83F6849EE4B96944E096F /* Pods_JGE_Beer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD23482D7D5F4E92C10331D9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0E5DCC2A3A1BFFFAFF08D547 /* CheckInternet.swift */,
+				5E37EC3DB637762959591F04 /* NavigationVC+Title.swift */,
+				3CE25674F48CAB1155B3A407 /* RxReachBottom.swift */,
+				C299783C4DEB22AFB54C0F0F /* UIKit+Alert.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E9C4E1C8A4D1B1DF7D681E48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD33547C214929D0E663FCF7 /* BeerTableViewCell.swift */,
+				725497E2961E76AC596438DB /* BeerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCEC19BE24FAE1615FF697FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AF016F13986081895556FE2 /* Beer.swift */,
+				B1B29DF12C5015C3E36AB373 /* ListSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE9FC6AE7BB194928EBB788D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5C8C3337A4EC42A00552E739 /* ListViewModel.swift */,
+				BA6E6C6C4F873AFFD7B01F7D /* RandomViewModel.swift */,
+				0ABF6E143BC43BE719049D03 /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D9953350260DFFD70016AD24 /* JGE-Beer */ = {
+		01D72CAE44B01FE5857D10AB /* JGE-Beer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9953365260DFFD90016AD24 /* Build configuration list for PBXNativeTarget "JGE-Beer" */;
+			buildConfigurationList = 91B14C19C84444E33A09150C /* Build configuration list for PBXNativeTarget "JGE-Beer" */;
 			buildPhases = (
-				BF66B1CD29E7C686BD06D822 /* [CP] Check Pods Manifest.lock */,
-				D995334D260DFFD70016AD24 /* Sources */,
-				D995334E260DFFD70016AD24 /* Frameworks */,
-				D995334F260DFFD70016AD24 /* Resources */,
-				4A0E82F9ECCD5F2813D7AFFA /* [CP] Embed Pods Frameworks */,
-				D9953417260F3F020016AD24 /* ShellScript */,
+				D25731CA13C9705480CE3AA2 /* [CP] Check Pods Manifest.lock */,
+				65C627BF17B47E15910122FB /* Sources */,
+				DB7CEDC5EC826456DE48F99A /* Resources */,
+				77AD3691B562572F36BF206E /* Frameworks */,
+				B3930F7BE853B9D8EDEAA8F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,57 +215,55 @@
 			);
 			name = "JGE-Beer";
 			productName = "JGE-Beer";
-			productReference = D9953351260DFFD70016AD24 /* JGE-Beer.app */;
+			productReference = E14541081A74B55D2E97F78C /* JGE-Beer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D9953349260DFFD70016AD24 /* Project object */ = {
+		C8762E29F7FA62F40B941B57 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					D9953350260DFFD70016AD24 = {
-						CreatedOnToolsVersion = 12.4;
+					01D72CAE44B01FE5857D10AB = {
+						DevelopmentTeam = C2JSJLJ4FN;
 					};
 				};
 			};
-			buildConfigurationList = D995334C260DFFD70016AD24 /* Build configuration list for PBXProject "JGE-Beer" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 57F2E710A865713A86F81722 /* Build configuration list for PBXProject "JGE-Beer" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = D9953348260DFFD70016AD24;
-			productRefGroup = D9953352260DFFD70016AD24 /* Products */;
+			mainGroup = 8836EE58A85FD8B0BB44E793;
+			productRefGroup = 253F3D5D9F038D20055F1E84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9953350260DFFD70016AD24 /* JGE-Beer */,
+				01D72CAE44B01FE5857D10AB /* JGE-Beer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D995334F260DFFD70016AD24 /* Resources */ = {
+		DB7CEDC5EC826456DE48F99A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9953361260DFFD90016AD24 /* LaunchScreen.storyboard in Resources */,
-				D995335E260DFFD90016AD24 /* Assets.xcassets in Resources */,
-				D995335C260DFFD70016AD24 /* Main.storyboard in Resources */,
-				D99533A9260E050A0016AD24 /* Stub.bundle in Resources */,
+				4AB8A36E725931D713182E6C /* Assets.xcassets in Resources */,
+				F436830CED5872375A577E56 /* LaunchScreen.storyboard in Resources */,
+				1F43E41DC5C0B226BFC65ACE /* Stub.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A0E82F9ECCD5F2813D7AFFA /* [CP] Embed Pods Frameworks */ = {
+		B3930F7BE853B9D8EDEAA8F7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,7 +280,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF66B1CD29E7C686BD06D822 /* [CP] Check Pods Manifest.lock */ = {
+		D25731CA13C9705480CE3AA2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,66 +302,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D9953417260F3F020016AD24 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D995334D260DFFD70016AD24 /* Sources */ = {
+		65C627BF17B47E15910122FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96014A7260F479400C5B72B /* RandomViewController.swift in Sources */,
-				D96014B1260F5A3400C5B72B /* BeerView.swift in Sources */,
-				D99533AD260E05AA0016AD24 /* ViewModelType.swift in Sources */,
-				D96014A1260F478000C5B72B /* TabBarController.swift in Sources */,
-				D99533FA260EB6DB0016AD24 /* CheckInternet.swift in Sources */,
-				D99533C5260E06F80016AD24 /* Beer.swift in Sources */,
-				D99533F3260E167C0016AD24 /* RxReachBottom.swift in Sources */,
-				D9953359260DFFD70016AD24 /* ListViewController.swift in Sources */,
-				D99533F7260E170D0016AD24 /* UIKit+Alert.swift in Sources */,
-				D9953355260DFFD70016AD24 /* AppDelegate.swift in Sources */,
-				D96014AB260F4B9E00C5B72B /* NavigationVC+Title.swift in Sources */,
-				D96014A4260F478900C5B72B /* SearchViewController.swift in Sources */,
-				D995339C260E02560016AD24 /* BeerAPI.swift in Sources */,
-				D96014B6260F5C8C00C5B72B /* RandomViewModel.swift in Sources */,
-				D99533DD260E0F150016AD24 /* ListSection.swift in Sources */,
-				D99533E0260E0F580016AD24 /* ListViewModel.swift in Sources */,
-				D99533E3260E12E40016AD24 /* ActivityIndicator.swift in Sources */,
-				D99533BA260E062C0016AD24 /* BeerTableViewCell.swift in Sources */,
+				2387897E938F97B41798D19D /* ActivityIndicator.swift in Sources */,
+				D95DBE7C886B1DE615DEEE7A /* AppDelegate.swift in Sources */,
+				8F07BC229F989E35A976A90A /* Beer.swift in Sources */,
+				9691BF170BC6A3335A94F6D6 /* BeerAPI.swift in Sources */,
+				624FB0422804F4781B3E002E /* BeerTableViewCell.swift in Sources */,
+				42B4A89416C5FF571A6C1EF3 /* BeerView.swift in Sources */,
+				829AEE790BC301BC62AD6734 /* CheckInternet.swift in Sources */,
+				1E5AFBC72285E665D1ADF793 /* ListSection.swift in Sources */,
+				C32B101D2577EB2083A31162 /* ListViewController.swift in Sources */,
+				D32EE9BB84EEC6BC156D7CBF /* ListViewModel.swift in Sources */,
+				03B53FD707D0ED3AAF84B065 /* NavigationVC+Title.swift in Sources */,
+				0BBBE150923F11F2B23D95E3 /* RandomViewController.swift in Sources */,
+				C5A20656465B265ABC684788 /* RandomViewModel.swift in Sources */,
+				15918ECD3AB21E93FC4FDF4A /* RxReachBottom.swift in Sources */,
+				93206A89DE00C35999821192 /* SearchViewController.swift in Sources */,
+				7376E8AAAAAE90EA130455FB /* SearchViewModel.swift in Sources */,
+				291A97C995D34C2FA8A7F482 /* TabBarController.swift in Sources */,
+				8958333F1B25C1D59BF56E9D /* UIKit+Alert.swift in Sources */,
+				F8B2CBFAF87D8B16CEB1DBA8 /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D995335A260DFFD70016AD24 /* Main.storyboard */ = {
+		1F85DCE8AC870E086E2D0773 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D995335B260DFFD70016AD24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D995335F260DFFD90016AD24 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9953360260DFFD90016AD24 /* Base */,
+				189E89F66CA5F8A7D3FAEC60 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -371,68 +345,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D9953363260DFFD90016AD24 /* Debug */ = {
+		6CBD4818BC8550BA1C463D08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE02BA169918FD7E76BC18F2 /* Pods-JGE-Beer.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = C2JSJLJ4FN;
+				INFOPLIST_FILE = "JGE-Beer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeonggo.JGE-Beer";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D9953364260DFFD90016AD24 /* Release */ = {
+		744FCABCAEE8EFEC9445EFC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -477,44 +409,84 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		D9953366260DFFD90016AD24 /* Debug */ = {
+		A027A4E8D90E58E87505BFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0E9FFF5B25DAA0051E67DCF /* Pods-JGE-Beer.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C2JSJLJ4FN;
-				INFOPLIST_FILE = "JGE-Beer/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"DEBUG=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeonggo.JGE-Beer";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		D9953367260DFFD90016AD24 /* Release */ = {
+		E7D52CF6330868539947F49E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5954A286AE9BEC15CBC88033 /* Pods-JGE-Beer.release.xcconfig */;
+			baseConfigurationReference = 741DE11E283E4BF7501C1A70 /* Pods-JGE-Beer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = C2JSJLJ4FN;
 				INFOPLIST_FILE = "JGE-Beer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -523,34 +495,33 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeonggo.JGE-Beer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D995334C260DFFD70016AD24 /* Build configuration list for PBXProject "JGE-Beer" */ = {
+		57F2E710A865713A86F81722 /* Build configuration list for PBXProject "JGE-Beer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9953363260DFFD90016AD24 /* Debug */,
-				D9953364260DFFD90016AD24 /* Release */,
+				A027A4E8D90E58E87505BFE4 /* Debug */,
+				744FCABCAEE8EFEC9445EFC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		D9953365260DFFD90016AD24 /* Build configuration list for PBXNativeTarget "JGE-Beer" */ = {
+		91B14C19C84444E33A09150C /* Build configuration list for PBXNativeTarget "JGE-Beer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9953366260DFFD90016AD24 /* Debug */,
-				D9953367260DFFD90016AD24 /* Release */,
+				6CBD4818BC8550BA1C463D08 /* Debug */,
+				E7D52CF6330868539947F49E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D9953349260DFFD70016AD24 /* Project object */;
+	rootObject = C8762E29F7FA62F40B941B57 /* Project object */;
 }

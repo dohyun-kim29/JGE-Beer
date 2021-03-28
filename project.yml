@@ -1,0 +1,21 @@
+name: JGE-Beer
+options:
+  postGenCommand: pod install # 생성 이후 명령 실행
+settingGroups:
+  app:
+    DEVELOPMENT_TEAM: C2JSJLJ4FN
+targets:
+  JGE-Beer:
+    sources:
+      excludes:
+          - "Main.storyboard"
+          - "SceneDelegate.swift"
+    settings:
+      groups: [app]
+      base:
+        INFOPLIST_FILE: JGE-Beer/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.jeonggo.JGE-Beer
+    type: application
+    platform: iOS
+    deploymentTarget: 11.0
+    sources: [JGE-Beer]

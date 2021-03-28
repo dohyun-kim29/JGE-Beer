@@ -92,8 +92,8 @@ class ListViewController: UIViewController {
         //        self?.navigationController?.pushViewController(controller, animated: true)
         //    }).disposed(by: disposeBag)
         
-        tableView.rx.itemSelected
-            .subscribe(onNext: { self.tableView.deselectRow(at: $0, animated: true)})
-            .disposed(by: disposeBag)
+//        tableView.rx.itemSelected
+//            .subscribe(onNext: { self.tableView.deselectRow(at: $0, animated: true)})
+//            .disposed(by: disposeBag)
     }
 }
