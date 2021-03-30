@@ -30,6 +30,8 @@
 		D32EE9BB84EEC6BC156D7CBF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8C3337A4EC42A00552E739 /* ListViewModel.swift */; };
 		D95DBE7C886B1DE615DEEE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBF280451AA53191D268655 /* AppDelegate.swift */; };
 		D96015CE261306C100C5B72B /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96015CD261306C100C5B72B /* ListViewControllerTests.swift */; };
+		D96015F32613160900C5B72B /* RandomViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96015F22613160900C5B72B /* RandomViewControllerTests.swift */; };
+		D96015F9261318B400C5B72B /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96015F8261318B400C5B72B /* SearchViewControllerTests.swift */; };
 		F436830CED5872375A577E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F85DCE8AC870E086E2D0773 /* LaunchScreen.storyboard */; };
 		F8B2CBFAF87D8B16CEB1DBA8 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B14C0BAF3DD0DFEFE9081 /* ViewModelType.swift */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,8 @@
 		D96015CB261306C100C5B72B /* JGE-BeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JGE-BeerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96015CD261306C100C5B72B /* ListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
 		D96015CF261306C100C5B72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96015F22613160900C5B72B /* RandomViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewControllerTests.swift; sourceTree = "<group>"; };
+		D96015F8261318B400C5B72B /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
 		E14541081A74B55D2E97F78C /* JGE-Beer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "JGE-Beer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBF280451AA53191D268655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +207,8 @@
 			children = (
 				D96015CD261306C100C5B72B /* ListViewControllerTests.swift */,
 				D96015CF261306C100C5B72B /* Info.plist */,
+				D96015F22613160900C5B72B /* RandomViewControllerTests.swift */,
+				D96015F8261318B400C5B72B /* SearchViewControllerTests.swift */,
 			);
 			path = "JGE-BeerTests";
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 				DB7CEDC5EC826456DE48F99A /* Resources */,
 				A2C91E73E46B4ED8B2900E6B /* Frameworks */,
 				0E730A83078388F40494BCBC /* [CP] Embed Pods Frameworks */,
+				D96015EE2613143E00C5B72B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -266,6 +273,7 @@
 				D96015C8261306C100C5B72B /* Frameworks */,
 				D96015C9261306C100C5B72B /* Resources */,
 				727E425EF5C22B8251D723EF /* [CP] Embed Pods Frameworks */,
+				D96015EF2613144B00C5B72B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -413,6 +421,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D96015EE2613143E00C5B72B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
+		D96015EF2613144B00C5B72B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -447,6 +489,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96015CE261306C100C5B72B /* ListViewControllerTests.swift in Sources */,
+				D96015F32613160900C5B72B /* RandomViewControllerTests.swift in Sources */,
+				D96015F9261318B400C5B72B /* SearchViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

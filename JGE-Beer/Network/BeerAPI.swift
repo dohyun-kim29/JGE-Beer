@@ -49,8 +49,8 @@ extension BeerAPI: TargetType {
             return stubbedResponse("BeerList")
         case .random:
             return stubbedResponse("RandomBeer")
-        default:
-            return Data()
+        case .searchID:
+            return stubbedResponse("SearchBeer")
         }
     }
     

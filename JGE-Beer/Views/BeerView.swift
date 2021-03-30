@@ -15,6 +15,7 @@ class BeerView: UIView {
     private let stackSpacing: CGFloat = 10.0
     private let padding: CGFloat = 16.0
     private var disposeBag = DisposeBag()
+    private var isRandom = false
     
     private lazy var beerImageView: UIImageView = {
         let beerImageView = UIImageView()
@@ -71,8 +72,7 @@ class BeerView: UIView {
                 } else {
                     self.beerImageView.kf.setImage(with: URL(string: beer.imageURL!), options: [.cacheMemoryOnly])
                 }
-            }
-            else {
+            } else {
                 let reachability = try? Reachability()
                 
                 reachability?.whenReachable = { _ in

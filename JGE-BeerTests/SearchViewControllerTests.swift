@@ -1,5 +1,5 @@
 //
-//  JGE_BeerTests.swift
+//  SearchViewControllerTests.swift
 //  JGE-BeerTests
 //
 //  Created by GoEun Jeong on 2021/03/30.
@@ -13,22 +13,22 @@ import Moya
 
 @testable import JGE_Beer
 
-class ListViewControllerTests: XCTestCase {
+class SearchViewControllerTests: XCTestCase {
 
-  var viewModel: ListViewModel!
+  var viewModel: SearchViewModel!
   var disposeBag: DisposeBag!
   var scheduler: TestScheduler!
-  var output: ListViewModel.Output!
+  var output: SearchViewModel.Output!
 
   override func setUpWithError() throws {
-    viewModel = ListViewModel()
+    viewModel = SearchViewModel()
     disposeBag = DisposeBag()
     scheduler = TestScheduler(initialClock: 0, resolution: 0.01)
 
-    let refreshTrigger = scheduler.createHotObservable([.next(100, ())])
-      .asDriver(onErrorJustReturn: ())
+    let searchTrigger = scheduler.createHotObservable([.next(100, "3")])
+      .asDriver(onErrorJustReturn: "0")
 
-    let input = ListViewModel.Input(provider: MoyaProvider<BeerAPI>(stubClosure: { _ in .immediate }), refreshTrigger: refreshTrigger, nextPageSignal: .empty())
+    let input = SearchViewModel.Input(provider: MoyaProvider<BeerAPI>(stubClosure: { _ in .immediate }), searchTrigger: searchTrigger)
     output = viewModel.transform(input: input)
   }
 
@@ -52,29 +52,11 @@ class ListViewControllerTests: XCTestCase {
     XCTAssertEqual(observer.events, exceptEvents)
   }
 
-  func testListCount() throws {
-    let observer = scheduler.createObserver(Int.self)
-
-    output.list
-      .map { $0.count }
-      .bind(to: observer)
-      .disposed(by: disposeBag)
-
-    scheduler.start()
-
-    let exceptEvents: [Recorded<Event<Int>>] = [
-      .next(0, 0),
-      .next(100, 25)
-    ]
-
-    XCTAssertEqual(observer.events, exceptEvents)
-  }
-
   func testUserData() throws {
     let observer = scheduler.createObserver(Beer?.self)
 
-    output.list
-      .map({ $0.last })
+    output.beer
+      .map({ $0.first })
       .bind(to: observer)
       .disposed(by: disposeBag)
 
@@ -82,7 +64,7 @@ class ListViewControllerTests: XCTestCase {
 
     let exceptEvents: [Recorded<Event<Beer?>>] = [
       .next(0, nil),
-      .next(100, Beer(id: 25, name: "Bad Pixie", description: "2008 Prototype beer, a 4.7% wheat ale with crushed juniper berries and citrus peel.", imageURL: "https://images.punkapi.com/v2/25.png"))
+      .next(100, Beer(id: 3, name: "Berliner Weisse With Yuzu - B-Sides", description: "Japanese citrus fruit intensifies the sour nature of this German classic.", imageURL: "https://images.punkapi.com/v2/keg.png"))
     ]
     
     XCTAssertEqual(observer.events, exceptEvents)
