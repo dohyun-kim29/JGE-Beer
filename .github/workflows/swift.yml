@@ -15,4 +15,5 @@ jobs:
       uses: actions/checkout@master
     - name: Build and test
       run: |
+        pod install
         xcodebuild clean test -workspace JGE-Beer.xcworkspace -scheme JGE-BeerTests -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 11 Pro Max'
