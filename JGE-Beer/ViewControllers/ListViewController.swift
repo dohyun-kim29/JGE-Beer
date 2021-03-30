@@ -85,15 +85,5 @@ class ListViewController: UIViewController {
             .subscribe(onNext: { [weak self] error in
                 self?.showErrorAlert(with: error.localizedDescription)
             }).disposed(by: disposeBag)
-        
-        //    tableView.rx.modelSelected(Beer.self)
-        //      .subscribe(onNext: { [weak self] (user) in
-        //        let controller = DetailViewController(user: user)
-        //        self?.navigationController?.pushViewController(controller, animated: true)
-        //    }).disposed(by: disposeBag)
-        
-//        tableView.rx.itemSelected
-//            .subscribe(onNext: { self.tableView.deselectRow(at: $0, animated: true)})
-//            .disposed(by: disposeBag)
     }
 }

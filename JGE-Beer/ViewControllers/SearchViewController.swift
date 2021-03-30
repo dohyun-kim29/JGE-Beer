@@ -17,7 +17,13 @@ class SearchViewController: UIViewController {
     private let randomView = BeerView()
     private var viewModel: SearchViewModel?
     
-    private let searchBar = UISearchBar()
+    private lazy var indicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        return indicator
+    }()
+    
+    let searchController = UISearchController(searchResultsController: nil)
+//    private var searchBar = UISearchBar()
     
     // MARK: - Life Cycle
     
@@ -31,12 +37,8 @@ class SearchViewController: UIViewController {
     // MARK: - Private Methods
     
     private func setupNavigationTitle() {
-        self.navigationItem.titleView = searchBar
-//        let searchController = UISearchController(searchResultsController: nil)
-//        searchBar
-//        searchController.searchBar = searchBar
-//        searchController.searchBar.placeholder = "Search ID"
-//        self.navigationItem.searchController = searchController
+        self.navigationItem.searchController = searchController
+        searchController.searchBar.keyboardType = .numbersAndPunctuation
         self.navigationItem.title = "ID 검색"
         self.navigationItem.accessibilityLabel = "맥주 ID 검색"
         self.navigationController?.navigationBar.prefersLargeTitles = true
@@ -45,6 +47,7 @@ class SearchViewController: UIViewController {
     private func setupSubview() {
         view.backgroundColor = .white
         view.addSubview(randomView)
+        randomView.addSubview(indicator)
         
         randomView.snp.makeConstraints {
             $0.top.equalTo(view.layoutMarginsGuide)
@@ -55,9 +58,22 @@ class SearchViewController: UIViewController {
     private func bindViewModel() {
         viewModel = SearchViewModel()
         
-        print(searchBar.rx.text.orEmpty)
         
-        let searchTrigger = Driver<String>.merge(searchBar.rx.text.orEmpty.debounce(RxTimeInterval.microseconds(5), scheduler: MainScheduler.instance).distinctUntilChanged().asDriver(onErrorJustReturn: "0"))
+        searchController.searchBar.rx.searchButtonClicked
+            .subscribe(onNext: {
+                self.searchController.dismiss(animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
+//            .map { [weak self] _ in
+//                self?.searchController.searchBar.text
+//            }
+//            .do(onNext: { _ in
+//                self.searchController.dismiss(animated: true, completion: nil)
+//            })
+//            .bind(to: viewModel.idValueChanged)
+//            .disposed(by: disposeBag)
+        
+        let searchTrigger = Driver<String>.merge(searchController.searchBar.rx.text.orEmpty.debounce(RxTimeInterval.microseconds(5), scheduler: MainScheduler.instance).distinctUntilChanged().asDriver(onErrorJustReturn: "0"))
         
         let input = SearchViewModel.Input(provider: MoyaProvider<BeerAPI>(),
                                           searchTrigger: searchTrigger)
@@ -66,15 +82,15 @@ class SearchViewController: UIViewController {
         
         output?.beer
             .subscribe(onNext: { [weak self] beer in
-                self?.randomView.configure(with: beer.first ?? Beer(id: 0, name: "", description: "", imageURL: "https://via.placeholder.com/150"))
+                self?.randomView.configure(with: beer.first ?? Beer(id: nil, name: "", description: "", imageURL: nil))
                 self?.setupSubview()
             })
             .disposed(by: disposeBag)
         
-        //        output?.isLoading
-        //            .filter { !$0 }
-        //            .drive(refreshControl.rx.isRefreshing)
-        //            .disposed(by: disposeBag)
+        output?.isLoading
+            .filter { !$0 }
+            .drive(indicator.rx.isAnimating)
+            .disposed(by: disposeBag)
         
         output?.errorRelay
             .subscribe(onNext: { [weak self] error in

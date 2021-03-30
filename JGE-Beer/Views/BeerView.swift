@@ -71,7 +71,8 @@ class BeerView: UIView {
                 } else {
                     self.beerImageView.kf.setImage(with: URL(string: beer.imageURL!), options: [.cacheMemoryOnly])
                 }
-            } else {
+            }
+            else {
                 let reachability = try? Reachability()
                 
                 reachability?.whenReachable = { _ in
@@ -83,7 +84,7 @@ class BeerView: UIView {
                 }
             }
         }
-        idLabel.text = String(beer.id)
+        idLabel.text = beer.id != nil ? String(beer.id!) : ""
         nameLabel.text = beer.name
         descLabel.text = beer.description
     }

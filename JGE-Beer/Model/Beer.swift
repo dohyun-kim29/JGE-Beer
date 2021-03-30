@@ -8,9 +8,9 @@
 import Foundation
 
 struct Beer: Decodable {
-    var id: Int
-    var name: String
-    var description: String
+    var id: Int?
+    var name: String?
+    var description: String?
     var imageURL: String?
     
     enum CodingKeys: String, CodingKey {

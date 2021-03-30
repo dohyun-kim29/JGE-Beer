@@ -31,6 +31,11 @@ class RandomViewController: UIViewController {
         return randomButton
     }()
     
+    private lazy var indicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        return indicator
+    }()
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -49,6 +54,7 @@ class RandomViewController: UIViewController {
     private func setupSubview() {
         view.backgroundColor = .white
         view.addSubview(randomView)
+        randomView.addSubview(indicator)
         randomView.addSubview(randomButton)
         
         randomView.snp.makeConstraints {
@@ -76,15 +82,15 @@ class RandomViewController: UIViewController {
         
         output?.beer
             .subscribe(onNext: { [weak self] beer in
-                self?.randomView.configure(with: beer.first ?? Beer(id: 0, name: "", description: "", imageURL: "https://via.placeholder.com/150"))
+                self?.randomView.configure(with: beer.first ?? Beer(id: nil, name: "", description: "", imageURL: nil))
                 self?.setupSubview()
             })
             .disposed(by: disposeBag)
         
-//        output?.isLoading
-//            .filter { !$0 }
-//            .drive(refreshControl.rx.isRefreshing)
-//            .disposed(by: disposeBag)
+        output?.isLoading
+            .filter { !$0 }
+            .drive(indicator.rx.isAnimating)
+            .disposed(by: disposeBag)
         
         output?.errorRelay
             .subscribe(onNext: { [weak self] error in

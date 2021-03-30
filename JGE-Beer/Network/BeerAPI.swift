@@ -37,7 +37,7 @@ extension BeerAPI: TargetType {
         case let .getBeerList(pageSize):
             return .requestParameters(parameters: ["page": pageSize], encoding: URLEncoding.queryString)
         case let .searchID(id):
-            return .requestParameters(parameters: ["id": id], encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: ["ids": id], encoding: URLEncoding.queryString)
         default:
             return .requestPlain
         }
