@@ -89,6 +89,7 @@ class BeerTableViewCell: UITableViewCell {
                 } else {
                     self.beerImageView.kf.setImage(with: URL(string: beer.imageURL!), options: [.cacheMemoryOnly])
                 }
+            } else {
                 let reachability = try? Reachability()
                 
                 reachability?.whenReachable = { _ in

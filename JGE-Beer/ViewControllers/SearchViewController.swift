@@ -23,25 +23,30 @@ class SearchViewController: UIViewController {
     }()
     
     let searchController = UISearchController(searchResultsController: nil)
-//    private var searchBar = UISearchBar()
     
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        setupNavigationTitle()
+        setupNavigationBar()
         bindViewModel()
     }
     
     // MARK: - Private Methods
     
-    private func setupNavigationTitle() {
+    private func setupNavigationBar() {
         self.navigationItem.searchController = searchController
         searchController.searchBar.keyboardType = .numbersAndPunctuation
         self.navigationItem.title = "ID 검색"
         self.navigationItem.accessibilityLabel = "맥주 ID 검색"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        searchController.searchBar.rx.searchButtonClicked
+            .subscribe(onNext: {
+                self.searchController.dismiss(animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
     }
     
     private func setupSubview() {
@@ -57,21 +62,6 @@ class SearchViewController: UIViewController {
     
     private func bindViewModel() {
         viewModel = SearchViewModel()
-        
-        
-        searchController.searchBar.rx.searchButtonClicked
-            .subscribe(onNext: {
-                self.searchController.dismiss(animated: true, completion: nil)
-            })
-            .disposed(by: disposeBag)
-//            .map { [weak self] _ in
-//                self?.searchController.searchBar.text
-//            }
-//            .do(onNext: { _ in
-//                self.searchController.dismiss(animated: true, completion: nil)
-//            })
-//            .bind(to: viewModel.idValueChanged)
-//            .disposed(by: disposeBag)
         
         let searchTrigger = Driver<String>.merge(searchController.searchBar.rx.text.orEmpty.debounce(RxTimeInterval.microseconds(5), scheduler: MainScheduler.instance).distinctUntilChanged().asDriver(onErrorJustReturn: "0"))
         

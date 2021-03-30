@@ -19,3 +19,7 @@ targets:
     platform: iOS
     deploymentTarget: 11.0
     sources: [JGE-Beer]
+  JGE-BeerTests:
+    settings:
+      groups: [app]
+  

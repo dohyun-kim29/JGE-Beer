@@ -22,6 +22,7 @@ extension UIViewController {
         
         guard let containerView = self.navigationItem.titleView?.superview else { return }
         
+        
         // NOTE: This always seems to be 0. Huh??
         let leftBarItemWidth = self.navigationItem.leftBarButtonItems?.reduce(0, { $0 + $1.width })
         

@@ -15,79 +15,96 @@
 		2387897E938F97B41798D19D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243F3027D111D40FBFF28CF /* ActivityIndicator.swift */; };
 		291A97C995D34C2FA8A7F482 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E680F1B645CD05E9796 /* TabBarController.swift */; };
 		42B4A89416C5FF571A6C1EF3 /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725497E2961E76AC596438DB /* BeerView.swift */; };
+		4869A6A5A333FE0AD9D9C3C2 /* Pods_JGE_Beer_JGE_BeerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D501D9192BF77D097DF1AD2 /* Pods_JGE_Beer_JGE_BeerTests.framework */; };
 		4AB8A36E725931D713182E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253AF0622240D8CAB6629486 /* Assets.xcassets */; };
 		624FB0422804F4781B3E002E /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33547C214929D0E663FCF7 /* BeerTableViewCell.swift */; };
 		7376E8AAAAAE90EA130455FB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF6E143BC43BE719049D03 /* SearchViewModel.swift */; };
-		73F0D617DC14EE8345B69EF6 /* Pods_JGE_Beer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A83F6849EE4B96944E096F /* Pods_JGE_Beer.framework */; };
 		829AEE790BC301BC62AD6734 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5DCC2A3A1BFFFAFF08D547 /* CheckInternet.swift */; };
 		8958333F1B25C1D59BF56E9D /* UIKit+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299783C4DEB22AFB54C0F0F /* UIKit+Alert.swift */; };
 		8F07BC229F989E35A976A90A /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF016F13986081895556FE2 /* Beer.swift */; };
 		93206A89DE00C35999821192 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A2C7C6AF76683E8C955DFF /* SearchViewController.swift */; };
 		9691BF170BC6A3335A94F6D6 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6EDBA05765CBAE027BB20 /* BeerAPI.swift */; };
 		C32B101D2577EB2083A31162 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5697D851A010935F62D7D99 /* ListViewController.swift */; };
+		C3D162064F531658A325EFEC /* Pods_JGE_Beer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B8F6FB5841B31C0EA32920 /* Pods_JGE_Beer.framework */; };
 		C5A20656465B265ABC684788 /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E6C6C4F873AFFD7B01F7D /* RandomViewModel.swift */; };
 		D32EE9BB84EEC6BC156D7CBF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8C3337A4EC42A00552E739 /* ListViewModel.swift */; };
 		D95DBE7C886B1DE615DEEE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBF280451AA53191D268655 /* AppDelegate.swift */; };
+		D96015CE261306C100C5B72B /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96015CD261306C100C5B72B /* ListViewControllerTests.swift */; };
 		F436830CED5872375A577E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F85DCE8AC870E086E2D0773 /* LaunchScreen.storyboard */; };
 		F8B2CBFAF87D8B16CEB1DBA8 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B14C0BAF3DD0DFEFE9081 /* ViewModelType.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D96015D0261306C100C5B72B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8762E29F7FA62F40B941B57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D72CAE44B01FE5857D10AB;
+			remoteInfo = "JGE-Beer";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0243F3027D111D40FBFF28CF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		07B8F6FB5841B31C0EA32920 /* Pods_JGE_Beer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JGE_Beer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		087F39E66FC3B535412EC910 /* Pods-JGE-Beer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.debug.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.debug.xcconfig"; sourceTree = "<group>"; };
 		08A2C7C6AF76683E8C955DFF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0ABF6E143BC43BE719049D03 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		0E2B14C0BAF3DD0DFEFE9081 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		0E5DCC2A3A1BFFFAFF08D547 /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		1856235A3DD858BD6B253FC1 /* Pods-JGE-Beer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.release.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.release.xcconfig"; sourceTree = "<group>"; };
 		189E89F66CA5F8A7D3FAEC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		253AF0622240D8CAB6629486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CE25674F48CAB1155B3A407 /* RxReachBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxReachBottom.swift; sourceTree = "<group>"; };
-		52A83F6849EE4B96944E096F /* Pods_JGE_Beer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JGE_Beer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D501D9192BF77D097DF1AD2 /* Pods_JGE_Beer_JGE_BeerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JGE_Beer_JGE_BeerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E82ABA7E7E8C4EBB977F0B /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		5C8C3337A4EC42A00552E739 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		5E37EC3DB637762959591F04 /* NavigationVC+Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationVC+Title.swift"; sourceTree = "<group>"; };
 		61440A9A6E1D3E517F49932E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6AF016F13986081895556FE2 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		725497E2961E76AC596438DB /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
-		741DE11E283E4BF7501C1A70 /* Pods-JGE-Beer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.release.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.release.xcconfig"; sourceTree = "<group>"; };
+		760FFE244E417B53E2864A58 /* Pods-JGE-Beer-JGE-BeerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer-JGE-BeerTests.release.xcconfig"; path = "Target Support Files/Pods-JGE-Beer-JGE-BeerTests/Pods-JGE-Beer-JGE-BeerTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5E6EDBA05765CBAE027BB20 /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
 		A98C706BC39A66C4B6520D7A /* Stub.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stub.bundle; sourceTree = "<group>"; };
 		B1B29DF12C5015C3E36AB373 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
 		BA6E6C6C4F873AFFD7B01F7D /* RandomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewModel.swift; sourceTree = "<group>"; };
+		BDEEC6F50BDEB4C42BD9FE88 /* Pods-JGE-Beer-JGE-BeerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer-JGE-BeerTests.debug.xcconfig"; path = "Target Support Files/Pods-JGE-Beer-JGE-BeerTests/Pods-JGE-Beer-JGE-BeerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C299783C4DEB22AFB54C0F0F /* UIKit+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Alert.swift"; sourceTree = "<group>"; };
 		C8F53E680F1B645CD05E9796 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CD33547C214929D0E663FCF7 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		D5697D851A010935F62D7D99 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D96015CB261306C100C5B72B /* JGE-BeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JGE-BeerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96015CD261306C100C5B72B /* ListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
+		D96015CF261306C100C5B72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E14541081A74B55D2E97F78C /* JGE-Beer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "JGE-Beer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBF280451AA53191D268655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE02BA169918FD7E76BC18F2 /* Pods-JGE-Beer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGE-Beer.debug.xcconfig"; path = "Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		77AD3691B562572F36BF206E /* Frameworks */ = {
+		A2C91E73E46B4ED8B2900E6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F0D617DC14EE8345B69EF6 /* Pods_JGE_Beer.framework in Frameworks */,
+				C3D162064F531658A325EFEC /* Pods_JGE_Beer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96015C8261306C100C5B72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4869A6A5A333FE0AD9D9C3C2 /* Pods_JGE_Beer_JGE_BeerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AB015FDD07ED3923784453E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FE02BA169918FD7E76BC18F2 /* Pods-JGE-Beer.debug.xcconfig */,
-				741DE11E283E4BF7501C1A70 /* Pods-JGE-Beer.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		253F3D5D9F038D20055F1E84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				E14541081A74B55D2E97F78C /* JGE-Beer.app */,
+				D96015CB261306C100C5B72B /* JGE-BeerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,13 +147,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		79F6F37425EABD2C00E488D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07B8F6FB5841B31C0EA32920 /* Pods_JGE_Beer.framework */,
+				3D501D9192BF77D097DF1AD2 /* Pods_JGE_Beer_JGE_BeerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8836EE58A85FD8B0BB44E793 = {
 			isa = PBXGroup;
 			children = (
 				2BD2113357CBE8E0433C5106 /* JGE-Beer */,
+				D96015CC261306C100C5B72B /* JGE-BeerTests */,
 				253F3D5D9F038D20055F1E84 /* Products */,
-				1AB015FDD07ED3923784453E /* Pods */,
-				A9E495A079E97E815F716E41 /* Frameworks */,
+				CF86EF360E41E50116F89C6F /* Pods */,
+				79F6F37425EABD2C00E488D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,14 +176,6 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		A9E495A079E97E815F716E41 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52A83F6849EE4B96944E096F /* Pods_JGE_Beer.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CD23482D7D5F4E92C10331D9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +185,26 @@
 				C299783C4DEB22AFB54C0F0F /* UIKit+Alert.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CF86EF360E41E50116F89C6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				087F39E66FC3B535412EC910 /* Pods-JGE-Beer.debug.xcconfig */,
+				1856235A3DD858BD6B253FC1 /* Pods-JGE-Beer.release.xcconfig */,
+				BDEEC6F50BDEB4C42BD9FE88 /* Pods-JGE-Beer-JGE-BeerTests.debug.xcconfig */,
+				760FFE244E417B53E2864A58 /* Pods-JGE-Beer-JGE-BeerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D96015CC261306C100C5B72B /* JGE-BeerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D96015CD261306C100C5B72B /* ListViewControllerTests.swift */,
+				D96015CF261306C100C5B72B /* Info.plist */,
+			);
+			path = "JGE-BeerTests";
 			sourceTree = "<group>";
 		};
 		E9C4E1C8A4D1B1DF7D681E48 /* Views */ = {
@@ -203,11 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91B14C19C84444E33A09150C /* Build configuration list for PBXNativeTarget "JGE-Beer" */;
 			buildPhases = (
-				D25731CA13C9705480CE3AA2 /* [CP] Check Pods Manifest.lock */,
+				84F975C8056BE5E6A51B7DA8 /* [CP] Check Pods Manifest.lock */,
 				65C627BF17B47E15910122FB /* Sources */,
 				DB7CEDC5EC826456DE48F99A /* Resources */,
-				77AD3691B562572F36BF206E /* Frameworks */,
-				B3930F7BE853B9D8EDEAA8F7 /* [CP] Embed Pods Frameworks */,
+				A2C91E73E46B4ED8B2900E6B /* Frameworks */,
+				0E730A83078388F40494BCBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,16 +257,41 @@
 			productReference = E14541081A74B55D2E97F78C /* JGE-Beer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D96015CA261306C100C5B72B /* JGE-BeerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96015D4261306C100C5B72B /* Build configuration list for PBXNativeTarget "JGE-BeerTests" */;
+			buildPhases = (
+				05A6F71D206C9D2855C021C1 /* [CP] Check Pods Manifest.lock */,
+				D96015C7261306C100C5B72B /* Sources */,
+				D96015C8261306C100C5B72B /* Frameworks */,
+				D96015C9261306C100C5B72B /* Resources */,
+				727E425EF5C22B8251D723EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D96015D1261306C100C5B72B /* PBXTargetDependency */,
+			);
+			name = "JGE-BeerTests";
+			productName = "JGE-BeerTests";
+			productReference = D96015CB261306C100C5B72B /* JGE-BeerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C8762E29F7FA62F40B941B57 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					01D72CAE44B01FE5857D10AB = {
 						DevelopmentTeam = C2JSJLJ4FN;
+					};
+					D96015CA261306C100C5B72B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 01D72CAE44B01FE5857D10AB;
 					};
 				};
 			};
@@ -245,11 +309,19 @@
 			projectRoot = "";
 			targets = (
 				01D72CAE44B01FE5857D10AB /* JGE-Beer */,
+				D96015CA261306C100C5B72B /* JGE-BeerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D96015C9261306C100C5B72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB7CEDC5EC826456DE48F99A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,7 +335,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B3930F7BE853B9D8EDEAA8F7 /* [CP] Embed Pods Frameworks */ = {
+		05A6F71D206C9D2855C021C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JGE-Beer-JGE-BeerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E730A83078388F40494BCBC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,7 +374,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JGE-Beer/Pods-JGE-Beer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D25731CA13C9705480CE3AA2 /* [CP] Check Pods Manifest.lock */ = {
+		727E425EF5C22B8251D723EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JGE-Beer-JGE-BeerTests/Pods-JGE-Beer-JGE-BeerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JGE-Beer-JGE-BeerTests/Pods-JGE-Beer-JGE-BeerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JGE-Beer-JGE-BeerTests/Pods-JGE-Beer-JGE-BeerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84F975C8056BE5E6A51B7DA8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,7 +442,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D96015C7261306C100C5B72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96015CE261306C100C5B72B /* ListViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D96015D1261306C100C5B72B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D72CAE44B01FE5857D10AB /* JGE-Beer */;
+			targetProxy = D96015D0261306C100C5B72B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1F85DCE8AC870E086E2D0773 /* LaunchScreen.storyboard */ = {
@@ -347,7 +474,7 @@
 /* Begin XCBuildConfiguration section */
 		6CBD4818BC8550BA1C463D08 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE02BA169918FD7E76BC18F2 /* Pods-JGE-Beer.debug.xcconfig */;
+			baseConfigurationReference = 087F39E66FC3B535412EC910 /* Pods-JGE-Beer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -409,6 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -470,6 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -481,9 +610,58 @@
 			};
 			name = Debug;
 		};
+		D96015D2261306C100C5B72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEEC6F50BDEB4C42BD9FE88 /* Pods-JGE-Beer-JGE-BeerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2JSJLJ4FN;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JGE-BeerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeonggo.JGE-BeerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JGE-Beer.app/JGE-Beer";
+			};
+			name = Debug;
+		};
+		D96015D3261306C100C5B72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760FFE244E417B53E2864A58 /* Pods-JGE-Beer-JGE-BeerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2JSJLJ4FN;
+				INFOPLIST_FILE = "JGE-BeerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeonggo.JGE-BeerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JGE-Beer.app/JGE-Beer";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		E7D52CF6330868539947F49E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 741DE11E283E4BF7501C1A70 /* Pods-JGE-Beer.release.xcconfig */;
+			baseConfigurationReference = 1856235A3DD858BD6B253FC1 /* Pods-JGE-Beer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -517,6 +695,15 @@
 			buildConfigurations = (
 				6CBD4818BC8550BA1C463D08 /* Debug */,
 				E7D52CF6330868539947F49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D96015D4261306C100C5B72B /* Build configuration list for PBXNativeTarget "JGE-BeerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96015D2261306C100C5B72B /* Debug */,
+				D96015D3261306C100C5B72B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

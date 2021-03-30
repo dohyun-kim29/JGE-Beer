@@ -35,8 +35,8 @@ class ListViewController: UIViewController {
     
     // MARK: - Life Cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         setupNavigationTitle()
         setupSubview()
         bindViewModel()

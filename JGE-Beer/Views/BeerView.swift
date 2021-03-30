@@ -95,7 +95,6 @@ class BeerView: UIView {
         addSubview(nameStackView)
         nameStackView.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview().inset(padding)
-//            $0.bottom.equalToSuperview().inset(padding).priority(.high)
         }
     }
 }

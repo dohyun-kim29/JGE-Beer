@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct Beer: Decodable {
+struct Beer: Codable, Equatable {
     var id: Int?
     var name: String?
     var description: String?
     var imageURL: String?
     
     enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case name = "name"
-        case description = "description"
+        case id
+        case name
+        case description
         case imageURL = "image_url"
     }
 }

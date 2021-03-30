@@ -24,7 +24,7 @@ class RandomViewController: UIViewController {
         randomButton.setImage(UIImage(named: "Dice"), for: .highlighted)
         randomButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 30)
         randomButton.setTitle("돌려돌려 돌림판", for: .normal)
-        randomButton.titleEdgeInsets = UIEdgeInsets(top: 10, left: 30, bottom: 10, right: 30)
+        randomButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 30)
         randomButton.backgroundColor = UIColor.orange
         randomButton.clipsToBounds = true
         randomButton.layer.cornerRadius = 10
