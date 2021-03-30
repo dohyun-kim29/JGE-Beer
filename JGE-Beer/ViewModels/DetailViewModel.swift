@@ -1,22 +1,24 @@
 //
-//  SearchViewModel.swift
+//  DetailViewModel.swift
 //  JGE-Beer
 //
-//  Created by GoEun Jeong on 2021/03/28.
+//  Created by GoEun Jeong on 2021/03/30.
 //
 
 import RxSwift
 import RxCocoa
 import Moya
 
-class SearchViewModel: ViewModelType {
-    private var disposeBag = DisposeBag()
+class DetailViewModel: ViewModelType {
+    
+    private let disposeBag = DisposeBag()
     
     // MARK: - ViewModelType
     
     struct Input {
+        let loadTrigger: Signal<Void>
         let provider: MoyaProvider<BeerAPI>
-        let searchTrigger: Signal<String>
+        let id: Int
     }
     
     struct Output {
@@ -30,10 +32,10 @@ class SearchViewModel: ViewModelType {
         let beer = BehaviorRelay<[Beer]>(value: [])
         let errorRelay = PublishRelay<Error>()
         
-        input.searchTrigger
+        input.loadTrigger
             .asObservable()
-            .flatMapLatest { id in
-                input.provider.rx.request(.searchID(id: Int(id) ?? 0))
+            .flatMapLatest {
+                input.provider.rx.request(.getDetailBeer(id: input.id))
                     .filterSuccessfulStatusCodes()
                     .map([Beer].self)
                     .trackActivity(activityIndicator)

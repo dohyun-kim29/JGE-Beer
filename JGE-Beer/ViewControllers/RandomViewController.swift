@@ -64,7 +64,7 @@ class RandomViewController: UIViewController {
         
         randomButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.bottom.equalTo(view.layoutMarginsGuide).offset(-30)
+            $0.bottom.equalTo(view.layoutMarginsGuide).offset(-60)
             $0.width.equalTo(view.snp.width).offset(-30)
             $0.height.equalTo(40)
         }
@@ -73,7 +73,7 @@ class RandomViewController: UIViewController {
     private func bindViewModel() {
         viewModel = RandomViewModel()
         
-        let buttonTrigger = Driver<Void>.merge(.of(()), randomButton.rx.tap.asDriver())
+        let buttonTrigger = Signal<Void>.merge(.of(()), randomButton.rx.tap.asSignal())
         
         let input = RandomViewModel.Input(provider: MoyaProvider<BeerAPI>(),
                                         buttonTrigger: buttonTrigger)
@@ -89,7 +89,7 @@ class RandomViewController: UIViewController {
         
         output?.isLoading
             .filter { !$0 }
-            .drive(indicator.rx.isAnimating)
+            .emit(to: indicator.rx.isAnimating)
             .disposed(by: disposeBag)
         
         output?.errorRelay

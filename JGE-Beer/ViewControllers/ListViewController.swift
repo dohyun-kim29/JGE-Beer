@@ -35,8 +35,8 @@ class ListViewController: UIViewController {
     
     // MARK: - Life Cycle
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         setupNavigationTitle()
         setupSubview()
         bindViewModel()
@@ -63,7 +63,7 @@ class ListViewController: UIViewController {
         viewModel = ListViewModel()
         
         let nextPageSignal = tableView.rx.reachedBottom(offset: 120.0).asSignal()
-        let refreshTrigger = Driver<Void>.merge(.of(()), refreshControl.rx.controlEvent(.valueChanged).asDriver())
+        let refreshTrigger = Signal<Void>.merge(.of(()), refreshControl.rx.controlEvent(.valueChanged).asSignal())
         
         let input = ListViewModel.Input(provider: MoyaProvider<BeerAPI>(),
                                         refreshTrigger: refreshTrigger,
@@ -78,12 +78,22 @@ class ListViewController: UIViewController {
         
         output?.isLoading
             .filter { !$0 }
-            .drive(refreshControl.rx.isRefreshing)
+            .emit(to: refreshControl.rx.isRefreshing)
             .disposed(by: disposeBag)
         
         output?.errorRelay
             .subscribe(onNext: { [weak self] error in
                 self?.showErrorAlert(with: error.localizedDescription)
             }).disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(Beer.self)
+          .subscribe(onNext: { [weak self] (beer) in
+            let controller = DetailViewController(beer: beer)
+            self?.navigationController?.pushViewController(controller, animated: true)
+        }).disposed(by: disposeBag)
+
+        tableView.rx.itemSelected
+          .subscribe(onNext: { self.tableView.deselectRow(at: $0, animated: true)})
+          .disposed(by: disposeBag)
     }
 }

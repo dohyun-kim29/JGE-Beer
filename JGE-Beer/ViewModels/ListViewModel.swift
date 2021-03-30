@@ -18,13 +18,13 @@ class ListViewModel: ViewModelType {
     
     struct Input {
         let provider: MoyaProvider<BeerAPI>
-        let refreshTrigger: Driver<Void>
+        let refreshTrigger: Signal<Void>
         let nextPageSignal: Signal<Void>
     }
     
     struct Output {
         let list: BehaviorRelay<[Beer]>
-        let isLoading: Driver<Bool>
+        let isLoading: Signal<Bool>
         let errorRelay: PublishRelay<Error>
     }
     
@@ -62,6 +62,6 @@ class ListViewModel: ViewModelType {
             .bind(to: list)
             .disposed(by: disposeBag)
         
-        return Output(list: list, isLoading: activityIndicator.asDriver(), errorRelay: errorRelay)
+        return Output(list: list, isLoading: activityIndicator.asSignal(onErrorJustReturn: false), errorRelay: errorRelay)
     }
 }

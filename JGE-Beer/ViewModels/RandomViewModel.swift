@@ -16,12 +16,12 @@ class RandomViewModel: ViewModelType {
     
     struct Input {
         let provider: MoyaProvider<BeerAPI>
-        let buttonTrigger: Driver<Void>
+        let buttonTrigger: Signal<Void>
     }
     
     struct Output {
         let beer: BehaviorRelay<[Beer]>
-        let isLoading: Driver<Bool>
+        let isLoading: Signal<Bool>
         let errorRelay: PublishRelay<Error>
     }
     
@@ -43,6 +43,6 @@ class RandomViewModel: ViewModelType {
             .bind(to: beer)
             .disposed(by: disposeBag)
         
-        return Output(beer: beer, isLoading: activityIndicator.asDriver(), errorRelay: errorRelay)
+        return Output(beer: beer, isLoading: activityIndicator.asSignal(onErrorJustReturn: false), errorRelay: errorRelay)
     }
 }

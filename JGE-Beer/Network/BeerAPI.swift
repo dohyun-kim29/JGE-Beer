@@ -9,6 +9,7 @@ import Moya
 
 enum BeerAPI {
     case getBeerList(pageSize: Int)
+    case getDetailBeer(id: Int)
     case searchID(id: Int)
     case random
 }
@@ -38,6 +39,8 @@ extension BeerAPI: TargetType {
             return .requestParameters(parameters: ["page": pageSize], encoding: URLEncoding.queryString)
         case let .searchID(id):
             return .requestParameters(parameters: ["ids": id], encoding: URLEncoding.queryString)
+        case let .getDetailBeer(id):
+            return .requestParameters(parameters: ["ids": id], encoding: URLEncoding.queryString)
         default:
             return .requestPlain
         }
@@ -49,8 +52,8 @@ extension BeerAPI: TargetType {
             return stubbedResponse("BeerList")
         case .random:
             return stubbedResponse("RandomBeer")
-        case .searchID:
-            return stubbedResponse("SearchBeer")
+        case .searchID, .getDetailBeer:
+            return stubbedResponse("SingleBeer")
         }
     }
     

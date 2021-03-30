@@ -63,7 +63,7 @@ class SearchViewController: UIViewController {
     private func bindViewModel() {
         viewModel = SearchViewModel()
         
-        let searchTrigger = Driver<String>.merge(searchController.searchBar.rx.text.orEmpty.debounce(RxTimeInterval.microseconds(5), scheduler: MainScheduler.instance).distinctUntilChanged().asDriver(onErrorJustReturn: "0"))
+        let searchTrigger = searchController.searchBar.rx.text.orEmpty.debounce(RxTimeInterval.microseconds(5), scheduler: MainScheduler.instance).distinctUntilChanged().asSignal(onErrorJustReturn: "0")
         
         let input = SearchViewModel.Input(provider: MoyaProvider<BeerAPI>(),
                                           searchTrigger: searchTrigger)
@@ -79,7 +79,7 @@ class SearchViewController: UIViewController {
         
         output?.isLoading
             .filter { !$0 }
-            .drive(indicator.rx.isAnimating)
+            .emit(to: indicator.rx.isAnimating)
             .disposed(by: disposeBag)
         
         output?.errorRelay
