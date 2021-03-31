@@ -17,4 +17,4 @@ jobs:
       run: |
         brew install xcodegen
         xcodegen generate
-        xcodebuild clean test -workspace JGE-Beer.xcworkspace -scheme JGE-BeerTests -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 11 Pro Max'
+        xcodebuild clean test -workspace JGE-Beer.xcworkspace -scheme JGE-Beer -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 11 Pro Max'
