@@ -1,0 +1,36 @@
+name: JGE-Beer
+options:
+  postGenCommand: pod install # 생성 이후 명령 실행
+settingGroups:
+  app:
+    DEVELOPMENT_TEAM: C2JSJLJ4FN
+targets:
+  JGE-Beer:
+    scheme:
+      testTargets:
+        - JGE-BeerTests
+      gatherCoverageData: true
+    sources:
+      excludes:
+          - "Main.storyboard"
+          - "SceneDelegate.swift"
+    settings:
+      groups: [app]
+      base:
+        INFOPLIST_FILE: JGE-Beer/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.jeonggo.JGE-Beer
+    type: application
+    platform: iOS
+    deploymentTarget: 11.0
+    sources: [JGE-Beer]
+    
+  JGE-BeerTests:
+    type: bundle.unit-test # 테스트 타입
+    platform: iOS # 플랫폼
+    sources: [JGE-Beer, JGE-BeerTests]
+    settings:
+      groups: [app]
+      INFOPLIST_FILE: Info.plist # Info.plist 등록
+      commandLineArguments: [run: true, test: true]
+    dependencies:
+      - target: JGE-Beer
